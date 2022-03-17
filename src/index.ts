@@ -111,12 +111,11 @@ export class MockApi {
                 res.json(response);
             }
             else {
-                next();
+                res.json({
+                    message: `Failed to match route "${req.url}" against any fixture. See valid fixtures below.`,
+                    fixtures: fixturesMap,   
+                });
             }
-        });
-
-        this.app.get("/", (req, res) => {
-            res.send("Hello World!");
         });
 
         await startExpress(this.app, port);
