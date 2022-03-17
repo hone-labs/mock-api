@@ -1,0 +1,31 @@
+{
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": "3438450971559167169",
+        "title": "Governance period #2",
+        "slug": "governance-period-2",
+        "sign_up_address": "57QZ4S7YHTWPRAM3DQ2MLNSVLAQB7DTK4D7SUNRIEFMRGOU7DMYFGF55BY",
+        "registration_end_datetime": "2022-01-07T15:59:59Z",
+        "start_datetime": "2021-12-24T15:59:59Z",
+        "active_state_end_datetime": "2022-03-25T15:59:59Z",
+        "end_datetime": "2022-03-31T15:59:59Z",
+        "is_active": true,
+        "total_committed_stake": 2814807915510050.0
+      },
+      {
+        "id": "3424509646658173595",
+        "title": "Governance period #1",
+        "slug": "governance-period-1",
+        "sign_up_address": "GULDQIEZ2CUPBSHKXRWUW7X3LCYL44AI5GGSHHOQDGKJAZ2OANZJ43S72U",
+        "registration_end_datetime": "2021-10-14T16:00:00Z",
+        "start_datetime": "2021-09-30T16:00:00Z",
+        "active_state_end_datetime": "2021-12-24T15:59:58Z",
+        "end_datetime": "2021-12-31T15:59:59Z",
+        "is_active": false,
+        "total_committed_stake": 1708118111845189.0
+      }
+    ]
+  }

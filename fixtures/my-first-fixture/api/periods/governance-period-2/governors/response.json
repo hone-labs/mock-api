@@ -1,0 +1,657 @@
+{
+  "count": 68536,
+  "next": "https://governance.algorand.foundation/api/periods/governance-period-2/governors/?limit=50&offset=50",
+  "previous": null,
+  "results": [
+    {
+      "id": "3440089106486377932",
+      "account": {
+        "id": "3424778322565760454",
+        "address": "E2WBXOQJP6KR534OCBPKNOOQGOVUHC64EKGDQAOC562FUBC7KFAOXATI3Y"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "520000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:11:53.502431Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089113382431979",
+      "account": {
+        "id": "3440089113375737006",
+        "address": "PTKBDS2EHYGK6BTGKUO4WRLRTBIC4PV3DDWBFYERQGIFKDNYP2TKVNL2EM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:11:56.790861Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089133641212171",
+      "account": {
+        "id": "3426863124598563276",
+        "address": "VQQAJ2DZAHVHA7OQATPE3AVSGBG4IL2FOPSYEWXME2SGB4Z54LBVB54VGY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "377480339",
+      "is_eligible": false,
+      "not_eligible_reason": "commitment-failed",
+      "registration_datetime": "2021-12-24T16:12:06.451028Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089170121518830",
+      "account": {
+        "id": "3440089170113094331",
+        "address": "76V44DQMXSBIHGBBSJXIK6VOX74H4JYY3QHMRMDJ63EUG4T7GO3JCUW53I"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1000000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:12:23.847016Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089179477035144",
+      "account": {
+        "id": "3427210750271774593",
+        "address": "2XCIAX2IO5KXFWQPPS6RSLQPGB5XR6OFUQ3RFMO7SN6ZPY22EECSFHPZNY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "200000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:12:28.307605Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089233442145744",
+      "account": {
+        "id": "3424694364336758717",
+        "address": "ZBGDSCIF5KKPIY3BGJCGYSVFSB3K3CLRD53MUNB3CLYLRHIYMUAQ5NR3KU"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "3517000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:12:54.040018Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089233698335450",
+      "account": {
+        "id": "3440089233694150915",
+        "address": "TDAWY7D4RXWKT3OSJ7K35KVHLBBTGNWFXBMTZQHYNSXSWSG6VXJY4FDXIM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "450000000",
+      "is_eligible": false,
+      "not_eligible_reason": "commitment-failed",
+      "registration_datetime": "2021-12-24T16:12:54.161687Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089242992973922",
+      "account": {
+        "id": "3440089242989604368",
+        "address": "LHOVBTVVWUPPR4VLF7GMEJ4QAMNG57WKJP7KGDMEIRLAGJKCGU2KUGZHDY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "4000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:12:58.594251Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089288254811882",
+      "account": {
+        "id": "3440089288250530905",
+        "address": "6JNUXXZQZQT3G7AZ4MVLQVDESCJFUBHB55XBB2ARTIA3MQHALZKVN4LW2Q"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "3000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:20.176967Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089297429674910",
+      "account": {
+        "id": "3424717208951145277",
+        "address": "BGJFA4RUOAY7LOMNBZ76NAFIKVQP5TSRU2PKRYQDS32Y2ITFGBGODGDJLM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "5000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:24.552194Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089297645803505",
+      "account": {
+        "id": "3424709329058094941",
+        "address": "H4HGGEIDSBOLSW5Q6VZZGK5ZWJ3REZYSGB5UFMJNCF3YLQ62AG5SO2GRFE"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "227000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:24.654449Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089325545562173",
+      "account": {
+        "id": "3424712337461985517",
+        "address": "6OXYO7QSQHFHED4HQ2J4XRUDJKYOG4DFWA2IXWS772PCRZHXVUOZR7WPYY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "10271000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:37.958893Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089334402375562",
+      "account": {
+        "id": "3440089334397654439",
+        "address": "CIGV22RBZI7L5QFHKX6LYKQ3LFR6G2AIAMODEURUNUMIVXD3CIDIYQ5OGY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2087428",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:42.181830Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089352870501054",
+      "account": {
+        "id": "3424783048120219949",
+        "address": "4EZRRSSYF6XXRGXCAQRB45LEUCBV6SQDU7O5QV6Y4W3Z7FC7V3EONA64PI"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "3200000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:13:50.987898Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089436751344161",
+      "account": {
+        "id": "3424697408835092274",
+        "address": "6EWTIUDZGKHUOHK6H3HKRLWD4DKUVJIQ3ENFPPA476LHWM7BMA3TS6NSSQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "122000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:14:30.985743Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089473799968274",
+      "account": {
+        "id": "3440089473799263849",
+        "address": "7CCCKJVUYABM5RTVV2PRKSQ57KDXLENJW4W2WBNR6BDYH4F4RYVBHADDDE"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1500000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:14:48.651964Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089483584938128",
+      "account": {
+        "id": "3440089483580885617",
+        "address": "27TZ3JVQSIM66XP2RYLDDGLK4QL54EU6AS57KUYM6FCNTUDONEMWHZNQ6M"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "5000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:14:53.317672Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089493092380795",
+      "account": {
+        "id": "3440089493088116479",
+        "address": "72LZKN7AOGKGOLIKPPF5RDAASVN5UPV4BIDLDFAOZCWW2N24K2U4NDSJNY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "31833425494",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:14:57.850409Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089499968598229",
+      "account": {
+        "id": "3427165748393431730",
+        "address": "EKHLSAIXYEWGNCPXMPEMPBD35BRUSSYBZOCSUONQUOWBG7NDRTFDO5GAWE"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "250000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:15:01.130093Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089508892510896",
+      "account": {
+        "id": "3426819539544684028",
+        "address": "HZ63GY4EZ3WQZLOSATSATEJW6NFPPIIF7A3DTEJFXEK5H4KULNMNAXJUBI"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "15000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:15:05.385071Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089529509204901",
+      "account": {
+        "id": "3424812690923618904",
+        "address": "RTX4GARXADKCHW5BZXOOLMR4IYIVYA7CAFUXD2QCGSYA75R7LHYAM3U4ZM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "98000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:15:15.215693Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089554512257923",
+      "account": {
+        "id": "3440089554507148731",
+        "address": "FQ3K7SRUUNCVQV2NJJWEKR3QGQ4VA2JSW4K6WPVTWDDIML2BY3S3JJ57IY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "145692274",
+      "is_eligible": false,
+      "not_eligible_reason": "commitment-failed",
+      "registration_datetime": "2021-12-24T16:15:27.137416Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089593391697752",
+      "account": {
+        "id": "3427127335466947984",
+        "address": "WZGCDSEUPDERDRLFCTTNK43DGMUY72W7JA7RJR4AMNA7YIWE5F37VX4CEU"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2118324025",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:15:45.678146Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089636709707204",
+      "account": {
+        "id": "3440089636706847491",
+        "address": "OSW7K7HEJQUXPGWHWU6OYQMZNLARPNE3UNC5YQI5G3MQMPUJBJOVTM3QAY"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:16:06.333148Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089646117702832",
+      "account": {
+        "id": "3424713841154776396",
+        "address": "F4MD3FUNVCAH52O33HZR65NZDZ66W4BRNK7V2RVLQALOEI5A2LKPBC3Z5Q"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "10509000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:16:10.818455Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089682420111922",
+      "account": {
+        "id": "3440089682415553367",
+        "address": "V32YBY73VZOGDOOC55CW7I7JMCC5VVIFNROMGI4EP6LLK6FZWIPPYW6CIQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1346090172",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:16:28.129325Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089692259902708",
+      "account": {
+        "id": "3424729916875638584",
+        "address": "CWVY5AH7H52BR4KGCATZGIMDZUFVBGVDRPDRDBCAKP7NX5WONHZZQUUADM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "315000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:16:32.821612Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089737082717406",
+      "account": {
+        "id": "3440089737081512410",
+        "address": "GYAJJO7DRWUMP6CRTVEM2L4ZRRFDDI3HPSWFHROZM2CECSAP6WDIFZNQPU"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1000000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:16:54.195081Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089737338575274",
+      "account": {
+        "id": "3424708486984139311",
+        "address": "FTB76MEZVP5L3X7SRQAQY652BUKOKUUNEZ525IPM3XYLQK52CTPWOZHVTM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "5000000000",
+      "is_eligible": false,
+      "not_eligible_reason": "commitment-failed",
+      "registration_datetime": "2021-12-24T16:16:54.316358Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089829683647911",
+      "account": {
+        "id": "3440089829679953472",
+        "address": "WIORZH252WQEO4QYPAPZ7SOFGW5IBBHFY7NDGWU6U6H6ZD7J64HWK5KZ5I"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2000000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:17:38.350017Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440089829887344588",
+      "account": {
+        "id": "3440089829882311897",
+        "address": "MRKODSZWUKEWG2IU24DPE5KAJC74OBYCALC3TVSJSBJCH7BXZ2Q375BZWA"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1499000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:17:38.446263Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089837932461299",
+      "account": {
+        "id": "3440089837928144819",
+        "address": "3DIJVDOKBKD66BBK6NS43CY32NO4USWV7XKO5ECTK5HXLAVV7FKF2AHAJQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "350000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:17:42.284004Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089864888008381",
+      "account": {
+        "id": "3424714393669936129",
+        "address": "WBTZCCB7PB2QSY5EDYHGPCGOM7NZ4HNZRV7O7MDCJ3OLKUJQA3AW52EBUE"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2234000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:17:55.136962Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089910644446187",
+      "account": {
+        "id": "3427113046404996012",
+        "address": "2MKPBNR2OBLSDZ6IA3PVKRL7BAUPPE3UKNVMBZHXF654WZJYG2QY4YRCQI"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "6675000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:18:16.954969Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089956021728105",
+      "account": {
+        "id": "3425223116346935233",
+        "address": "VSNFTY57Z4SX7JIZZXY22DZZI3D3RKOIKWOIOT26HN6KJDEB57CDN6SURA"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "300000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:18:38.592671Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089974354780202",
+      "account": {
+        "id": "3440089974351020622",
+        "address": "JT7L3QMKB7PCZL3WVEWAX6H2A5FQAUXQJ7UBGTIR76XRBX3IPFYJ5MPL3U"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1214580053",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:18:47.334396Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440089995322491112",
+      "account": {
+        "id": "3424809364779791177",
+        "address": "V22R664VUAGM5WMQEP4BIDDIQSLIAFVYAWZSFZO5ZTHS6CII6UICKKYCEQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "924675170",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:18:57.332466Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090004850284875",
+      "account": {
+        "id": "3440090004848323151",
+        "address": "3C2DJOEH455MAA74CTKLB5IS4RWRN3YHJRHBIX4OEO6GL5IWSOMSNNXQ2A"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "340000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:01.876095Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090005053541880",
+      "account": {
+        "id": "3424837642969478354",
+        "address": "LCBKQMXAEFXAHSJLBSESFWL2LYDQSESU3QY6IGGM5DKARTNMBBYR6N32IQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "98000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:01.972789Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090021397132901",
+      "account": {
+        "id": "3440090021392753342",
+        "address": "WRWJCPRBIKWZ2M4BTT3QFZJKNUZHZORJWICAMWKZNLRGJPLBWKRMLCK2JU"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "273480787",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:19:09.766137Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440090021624924644",
+      "account": {
+        "id": "3440090021620945658",
+        "address": "L7MT33YK4JRCZN6QAXCHJNF3KBKU6WJSQY4CODCRXN6UYDKHBWO3UPJW2A"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1000000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:09.874725Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090031173756378",
+      "account": {
+        "id": "3440090031169408946",
+        "address": "66AJNK7VW455O6V2HCGKUGSQBM4QPORN7N64NIKZYIQCRTAY57RESX2OWA"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "700000000",
+      "is_eligible": false,
+      "not_eligible_reason": "commitment-failed",
+      "registration_datetime": "2021-12-24T16:19:14.427590Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090058995092010",
+      "account": {
+        "id": "3426873999742644358",
+        "address": "TFYRTJRWVQE4AAIEWNVBYXVZD6BIUJOSGGBERAS2QWDF7WJSNOWEOTTD5Q"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "500000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:19:27.694307Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440090068509272249",
+      "account": {
+        "id": "3440090068503628802",
+        "address": "H5XAN6EBF36O7ZU7EIXPZLSXQMZFIRQCRA72CHPKB3OMT6MHJWTXNQKYGM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "49000050",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:32.230514Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090068709506734",
+      "account": {
+        "id": "3440090068705939471",
+        "address": "JAN22A5FMY37EIKGDHORFYM7XCAWBNUKVUPCKKFOAUEUTPKPOAKQEPNXJM"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "675000000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:19:32.326307Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440090068912794014",
+      "account": {
+        "id": "3440090068908853914",
+        "address": "GNMRGMID6VYL4F5T6ZGC4FS5Z4GVHSJMCQUN42LIP3Z6ZOJ2QOLU6BXVAE"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1010000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:32.423319Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090095639066345",
+      "account": {
+        "id": "3440090095631207121",
+        "address": "4CRSAWW67QEI2QLFLQY3U6SW3EML4W6P7QT6OLICDCMNGXVJZWVIYRZSS4"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "280000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:45.168159Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090105418587275",
+      "account": {
+        "id": "3440090105414430823",
+        "address": "PWLQHVJQ4EQW7J4WP23U6HCQN5VE6UGBOLPKZ4CF7PZW5B3UET76QELSGQ"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "1000000",
+      "is_eligible": false,
+      "not_eligible_reason": "incomplete-vote",
+      "registration_datetime": "2021-12-24T16:19:49.830718Z",
+      "voted_voting_session_count": 0
+    },
+    {
+      "id": "3440090112389060340",
+      "account": {
+        "id": "3424719742317304277",
+        "address": "FOVZKXYFWGUAH3UZ35TK45GYXIYHXOW62S7P2UCH234SW62XUHZXKPP364"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "2300000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:19:53.155041Z",
+      "voted_voting_session_count": 1
+    },
+    {
+      "id": "3440090130448854777",
+      "account": {
+        "id": "3424756740204558138",
+        "address": "EV4WYYCXVN5CHLHFXQBBKTPNEIK3EZKJABVGCFMB6J5O4YHBC24KRC4G24"
+      },
+      "beneficiary_account": null,
+      "committed_algo_amount": "6010000000",
+      "is_eligible": true,
+      "not_eligible_reason": "",
+      "registration_datetime": "2021-12-24T16:20:01.766139Z",
+      "voted_voting_session_count": 1
+    }
+  ]
+}
