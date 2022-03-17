@@ -12,6 +12,21 @@ export class MockApi {
     // The Express app object.
     //
     private app?: express.Express;
+    
+    //
+    // Lookup table for all fixtures.
+    //
+    private fixturesMap: any;
+
+    //
+    // The name of the currently loaded fixture.
+    //
+    private loadedFixtureName?: string;
+    
+    //
+    // The currently loaded fixture.
+    //
+    private loadedFixture?: any;
 
     //
     // Normalizes a URL for comparison.
@@ -98,30 +113,68 @@ export class MockApi {
 
         this.app = express();
 
-        const fixturesMap: any = await this.loadFixtures();
-
-        console.log(fixturesMap);
-
-        const fixtureName = "my-first-fixture";
-        const loadedFixture = fixturesMap[fixtureName];
+        this.fixturesMap = await this.loadFixtures();
 
         this.app.use((req, res, next) => {
-            const response = this.matchUrl(req.url, fixtureName, loadedFixture);
-            if (response) {
-                res.json(response);
+            if (!this.loadedFixture) {
+                console.warn(`No fixture is loaded, use the "/load-fixture=name=<fixture-name>" route to load a particular fixture.`);
+            }
+            else {
+                const response = this.matchUrl(req.url, this.loadedFixtureName!, this.loadedFixture);
+                if (response) {
+                    res.json(response);
+                    return;
+                }
+            }
+
+            next();
+        });
+
+        this.app.get("/load-fixture", (req, res) => {
+            if (!req.query.name) {
+                res.send(`Expected query parameter "name=<fixture-name>"`).status(400);
+                return;
+            }
+
+            
+            const fixtureName = req.query.name as string;
+            const fixture = this.fixturesMap[fixtureName];
+            if (fixture === undefined) {
+                const message = `Failed to load fixture '${fixtureName}', a fixture with this name doesn't exist.`;
+                console.error(message);
+                res.json({
+                        message: message + ` See below for valid fixtures.`,
+                        fixtures: this.fixturesMap,   
+                    })
+                    .status(400);
+                    return;
+            }
+
+            this.loadedFixture = fixtureName;
+            this.loadedFixture = fixture;
+            res.json({ 
+                    message: `Loaded fixture ${fixtureName}`,
+                })
+                .status(200);
+        });
+
+        this.app.use((req, res, next) => {
+            if (!this.loadedFixture) {
+                res.json({
+                    message: `No fixture is loaded, so failed to match incoming route '${req.url}'. See valid fixtures below.`,
+                    fixtures: this.fixturesMap,   
+                });
             }
             else {
                 res.json({
-                    message: `Failed to match route "${req.url}" against any fixture. See valid fixtures below.`,
-                    fixtures: fixturesMap,   
+                    message: `Failed to match incoming route '${req.url}' against any route any fixture ${this.loadedFixtureName}. See valid routes below.`,
+                    fixtures: this.loadedFixture,   
                 });
             }
         });
 
         await startExpress(this.app, port);
     }
-
-   
 }
 
 //
