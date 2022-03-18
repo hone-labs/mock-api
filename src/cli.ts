@@ -8,6 +8,7 @@ async function main(): Promise<void> {
     await mockApi.start(port);
 
     console.log(`Mock API started at http://localhost:${port}`);
+    mockApi.displayFixtures();
 }
 
 main()

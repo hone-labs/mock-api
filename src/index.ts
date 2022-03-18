@@ -29,6 +29,11 @@ export class MockApi {
     private loadedFixture?: any;
 
     //
+    // The port number the server is running on.
+    //
+    private port?: number;
+
+    //
     // Normalizes a URL for comparison.
     //
     private normalizeUrl(url: string): string {
@@ -90,17 +95,35 @@ export class MockApi {
         }
         else {
             console.log(`Failed to match ${url} against route table for fixture ${fixtureName}:`);
-            console.log(JSON.stringify(loadedFixture, (key, value) => {
-                if (key === "jsonResponse") {
-                    return "...";
-                }
-                else {
-                    return value;
-                }
-            }, 4));
+            this.displayFixture(loadedFixture);
             return undefined;
         }
 
+    }
+
+    //
+    // Displays all fixtures.
+    //
+    public displayFixtures(): void {
+        for (const [fixtureName, fixture] of Object.entries(this.fixturesMap)) {
+            console.log(`== Fixture ${fixtureName}`);
+            console.log(`To load this fixture click: http://localhost:${this.port}/load-fixture?name=${fixtureName}`);
+            this.displayFixture(fixture);
+        }
+    }
+
+    //
+    // Displays the fixture.
+    //
+    private displayFixture(fixture: any) {
+        console.log(JSON.stringify(fixture, (key, value) => {
+            if (key === "jsonResponse") {
+                return "...";
+            }
+            else {
+                return value;
+            }
+        }, 4));
     }
 
     //
@@ -117,7 +140,7 @@ export class MockApi {
 
         this.app.use((req, res, next) => {
             if (!this.loadedFixture) {
-                console.warn(`No fixture is loaded, use the "/load-fixture=name=<fixture-name>" route to load a particular fixture.`);
+                console.warn(`No fixture is loaded, use the "http://localhost:${this.port}/load-fixture?name=<fixture-name>" route to load a particular fixture.`);
             }
             else {
                 const response = this.matchUrl(req.url, this.loadedFixtureName!, this.loadedFixture);
@@ -135,7 +158,6 @@ export class MockApi {
                 res.send(`Expected query parameter "name=<fixture-name>"`).status(400);
                 return;
             }
-
             
             const fixtureName = req.query.name as string;
             const fixture = this.fixturesMap[fixtureName];
@@ -174,6 +196,8 @@ export class MockApi {
         });
 
         await startExpress(this.app, port);
+
+        this.port = port;
     }
 }
 
