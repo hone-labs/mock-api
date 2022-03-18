@@ -1,18 +1,16 @@
+import { MockApi } from './index';
 
-import { MockApi } from "./index";
-
-const port = 3000;
+const port = 6000;
 
 async function main(): Promise<void> {
-    const mockApi = new MockApi();
-    await mockApi.start(port);
+  const mockApi = new MockApi();
+  await mockApi.start(port);
 
-    console.log(`Mock API started at http://localhost:${port}`);
-    mockApi.displayFixtures();
+  console.log(`Mock API started at http://localhost:${port}`);
+  mockApi.displayFixtures();
 }
 
-main()
-    .catch(err => {
-        console.error(`Failed with error:`);
-        console.error(err && err.stack || err);
-    });
+main().catch((err) => {
+  console.error(`Failed with error:`);
+  console.error((err && err.stack) || err);
+});
