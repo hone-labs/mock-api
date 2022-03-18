@@ -1,6 +1,6 @@
 {
     "name": "@optio-labs/mock-api",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Creates a mock REST API from JSON files.",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -22,7 +22,7 @@
         "test:watch": "jest --watch"
     },
     "bin": {
-        "mock-api-cli": "./bin/cli"
+        "mock-api": "./bin/cli"
     },
     "repository": {
         "type": "git",
