@@ -138,6 +138,9 @@ export class MockApi {
 
         this.fixturesMap = await this.loadFixtures();
 
+        //
+        // Match routes.
+        //
         this.app.use((req, res, next) => {
             if (!this.loadedFixture) {
                 console.warn(`No fixture is loaded, use the "http://localhost:${this.port}/load-fixture?name=<fixture-name>" route to load a particular fixture.`);
@@ -153,6 +156,9 @@ export class MockApi {
             next();
         });
 
+        //
+        // Route that loads a named fixture.
+        //
         this.app.get("/load-fixture", (req, res) => {
             if (!req.query.name) {
                 res.send(`Expected query parameter "name=<fixture-name>"`).status(400);
@@ -180,6 +186,9 @@ export class MockApi {
                 .status(200);
         });
 
+        //
+        // Any remaining route that has not been matched is an error.
+        //
         this.app.use((req, res, next) => {
             if (!this.loadedFixture) {
                 res.json({
