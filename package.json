@@ -1,6 +1,6 @@
 {
-    "name": "mock-api",
-    "version": "1.0.0",
+    "name": "@optio-labs/mock-api",
+    "version": "0.0.1",
     "description": "Creates a mock REST API from JSON files.",
     "main": "build/index.js",
     "types": "build/index.d.ts",
