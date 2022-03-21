@@ -10,7 +10,8 @@ async function main(): Promise<void> {
     mockApi.displayFixtures();
 }
 
-main().catch((err) => {
-    console.error(`Failed with error:`);
-    console.error((err && err.stack) || err);
-});
+main()
+    .catch((err) => {
+        console.error(`Failed with error:`);
+        console.error((err && err.stack) || err);
+    });
