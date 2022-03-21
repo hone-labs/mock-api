@@ -92,6 +92,18 @@ export function loadFixture(fixtureName: string): Promise<void> {
 }
 ```
 
+## Command line arguments
+
+Usage:
+
+```bash
+npx mock-api [--port=<port-number>]
+```
+
+Options:
+
+- --port - Sets the port number used by the mock API's HTTP server.
+
 ## Development
 
 Clone this repo.
