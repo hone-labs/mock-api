@@ -1,8 +1,16 @@
 import { MockApi } from './index';
-
-const port = 6000;
+import * as minimist from "minimist";
 
 async function main(): Promise<void> {
+
+    let port = 1234;
+
+    const argv = minimist(process.argv.slice(2));
+    
+    if (argv.port !== undefined)  {
+        port = argv.port;
+    }
+
     const mockApi = new MockApi();
     await mockApi.start(port);
 
