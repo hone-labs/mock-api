@@ -1,7 +1,30 @@
 import * as express from "express";
 import  * as fs from "fs-extra";
-import { networkInterfaces } from "os";
 import * as path from "path";
+
+//
+// Represents a fixture for a single route.
+//
+export interface IRouteFixture {
+    //
+    // The JSON response for the route.
+    //
+    jsonResponse: any;
+}
+
+//
+// Represents an API fixture.
+//
+export interface IApiFixture {
+    [index: string]: IRouteFixture;
+}
+
+//
+// A lookup table for API fixtures.
+//
+export interface IApiFixturesMap {
+    [index: string]: IApiFixture;
+}
 
 //
 // Class that represents the mock API.
@@ -16,7 +39,7 @@ export class MockApi {
     //
     // Lookup table for all fixtures.
     //
-    private fixturesMap: any;
+    private fixturesMap: IApiFixturesMap = {};
 
     //
     // The name of the currently loaded fixture.
@@ -26,7 +49,7 @@ export class MockApi {
     //
     // The currently loaded fixture.
     //
-    private loadedFixture?: any;
+    private loadedFixture?: IApiFixture;
 
     //
     // The port number the server is running on.
@@ -47,7 +70,7 @@ export class MockApi {
     //
     // Recursively loads api fixtures from the file system.
     //
-    private async loadFixture(fixturePath: string, apiPath: string, fixtureMap: any): Promise<void> {
+    private async loadFixture(fixturePath: string, apiPath: string, fixtureMap: IApiFixturesMap): Promise<void> {
         const items = await fs.readdir(fixturePath);
         
         for (const item of items) {
@@ -70,9 +93,9 @@ export class MockApi {
     //
     // Load fixtures from the file system.
     //
-    private async loadFixtures() {
+    private async loadFixtures(): Promise<IApiFixturesMap> {
         const fixtures = await fs.readdir("fixtures");
-        const fixturesMap: any = {};
+        const fixturesMap: IApiFixturesMap = {};
         for (const fixtureName of fixtures) {
             const fixtureMap = {};
             fixturesMap[fixtureName] = fixtureMap;
@@ -85,7 +108,7 @@ export class MockApi {
     // Matches a url to find a fixture.
     // Returns the fixture's reponse if there is one, otherwise it returns undefined.
     //
-    private matchUrl(url: string, fixtureName: string, loadedFixture: any): any {
+    private matchUrl(url: string, fixtureName: string, loadedFixture: IApiFixture): any {
         url = this.normalizeUrl(url);
 
         const match = loadedFixture[url];
@@ -115,7 +138,7 @@ export class MockApi {
     //
     // Displays the fixture.
     //
-    private displayFixture(fixture: any) {
+    private displayFixture(fixture: IApiFixture) {
         console.log(JSON.stringify(fixture, (key, value) => {
             if (key === "jsonResponse") {
                 return "...";
@@ -178,7 +201,7 @@ export class MockApi {
                     return;
             }
 
-            this.loadedFixture = fixtureName;
+            this.loadedFixtureName = fixtureName;
             this.loadedFixture = fixture;
             res.json({ 
                     message: `Loaded fixture ${fixtureName}`,
