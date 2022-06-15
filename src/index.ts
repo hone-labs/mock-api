@@ -176,24 +176,6 @@ export class MockApi {
         this.fixturesMap = await this.loadFixtures();
 
         //
-        // Match routes.
-        //
-        this.app.use((req, res, next) => {
-            if (!this.loadedFixture) {
-                console.warn(`No fixture is loaded, use the "http://localhost:${this.port}/load-fixture?name=<fixture-name>" route to load a particular fixture.`);
-            }
-            else {
-                const response = this.matchUrl(req.url, this.loadedFixtureName!, this.loadedFixture);
-                if (response) {
-                    res.json(response);
-                    return;
-                }
-            }
-
-            next();
-        });
-
-        //
         // Route that loads a named fixture.
         //
         this.app.get("/load-fixture", (req, res) => {
@@ -214,10 +196,30 @@ export class MockApi {
                 return;
             }
 
+            const message = `Loaded fixture ${fixtureName}`;
+            console.log(message);
             res.json({ 
-                    message: `Loaded fixture ${fixtureName}`,
+                    message: message,
                 })
                 .status(200);
+        });
+
+        //
+        // Match routes.
+        //
+        this.app.use((req, res, next) => {
+            if (!this.loadedFixture) {
+                console.warn(`No fixture is loaded, use the "http://localhost:${this.port}/load-fixture?name=<fixture-name>" route to load a particular fixture.`);
+            }
+            else {
+                const response = this.matchUrl(req.url, this.loadedFixtureName!, this.loadedFixture);
+                if (response) {
+                    res.json(response);
+                    return;
+                }
+            }
+
+            next();
         });
 
         //
