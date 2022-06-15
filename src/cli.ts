@@ -14,6 +14,15 @@ async function main(): Promise<void> {
     const mockApi = new MockApi();
     await mockApi.start(port);
 
+    if (argv.fixture) {
+        if (mockApi.setFixture(argv.fixture)) {
+            console.log(`Set default fixture "${argv.fixture}".`);
+        }
+        else {
+            console.log(`Failed to set default fixture "${argv.fixture}", this fixture doesn't exist.`);
+        }
+    }
+
     console.log(`Mock API started at http://localhost:${port}`);
     mockApi.displayFixtures();
 }

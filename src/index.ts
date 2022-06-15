@@ -1,5 +1,5 @@
 import * as express from "express";
-import  * as fs from "fs-extra";
+import * as fs from "fs-extra";
 import * as path from "path";
 
 //
@@ -150,6 +150,20 @@ export class MockApi {
     }
 
     //
+    // Sets the current fixture.
+    //
+    public setFixture(fixtureName: string): boolean {
+        const fixture = this.fixturesMap[fixtureName];
+        if (fixture === undefined) {
+            return false;
+        }
+
+        this.loadedFixtureName = fixtureName;
+        this.loadedFixture = fixture;
+        return true;
+    }
+
+    //
     // Starts the mock API server.
     //
     async start(port: number): Promise<void> {
@@ -189,8 +203,7 @@ export class MockApi {
             }
             
             const fixtureName = req.query.name as string;
-            const fixture = this.fixturesMap[fixtureName];
-            if (fixture === undefined) {
+            if (!this.setFixture(fixtureName)) {
                 const message = `Failed to load fixture '${fixtureName}', a fixture with this name doesn't exist.`;
                 console.error(message);
                 res.json({
@@ -198,11 +211,9 @@ export class MockApi {
                         fixtures: this.fixturesMap,   
                     })
                     .status(400);
-                    return;
+                return;
             }
 
-            this.loadedFixtureName = fixtureName;
-            this.loadedFixture = fixture;
             res.json({ 
                     message: `Loaded fixture ${fixtureName}`,
                 })

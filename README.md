@@ -97,12 +97,13 @@ export function loadFixture(fixtureName: string): Promise<void> {
 Usage:
 
 ```bash
-npx mock-api [--port=<port-number>]
+npx mock-api [options]
 ```
 
 Options:
 
-- --port - Sets the port number used by the mock API's HTTP server.
+- --port=&lt;port-number&gt;        - Sets the port number used by the mock API's HTTP server.
+- --fixture=&lt;fixture-name&gt;    - Loads a default fixture on start up.
 
 ## Development
 
